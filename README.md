@@ -3,7 +3,7 @@ Time Series Modelling — Guayas Daily Demand (2014 Q1)
 Forecasting daily unit sales for Ecuador’s Guayas region using classic feature-based time-series (XGBoost), with lightweight tuning, MLflow tracking, and a simple post-hoc bias correction.
 
 **What’s inside**
-- Data prep: clamp to 2014-01-01 → 2014-03-31, aggregate to daily totals, add calendar + lag/rolling features.
+- Data prep: Load data in parts, EDA for missing data and outliers, basic data exploration, clamp to 2014-01-01 → 2014-03-31, aggregate to daily totals, add calendar + lag/rolling features.
 - Models: XGBoost baseline → tuned XGBoost → (optional) bias-corrected forecast.
 - Tracking: MLflow logs for params, metrics, and forecast plots.
 - Artifacts: saved feature list, scaler (for future NN work), bias-correction factor.
